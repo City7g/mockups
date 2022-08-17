@@ -153,7 +153,7 @@ const leave = () => {
 		font-size: 16px;
 		line-height: 26px;
 		font-weight: 400;
-		color: rgba(0, 0, 0, 0.87);
+		color: $black;
 		overflow: hidden;
 		text-overflow: ellipsis;
 		white-space: nowrap;

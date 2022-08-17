@@ -19,7 +19,7 @@ defineProps({
   min-width: 100px;
   font-size: 16px;
   line-height: 26px;
-  background-color: #F4E041;
+  background-color: $primary;
   border-radius: 17px;
   cursor: pointer;
   transition: 0.3s background-color ease, 0.3s color ease;
@@ -29,7 +29,7 @@ defineProps({
   }
 
   &:hover {
-    background-color: #FFE302;
+    background-color: $primary-hover;
   }
 
   &:disabled {

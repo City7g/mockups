@@ -79,10 +79,10 @@ const isPlaceholderTop = computed(() => {
     background-color: transparent;
 
     &.error {
-      border-color: #CB3D40 !important;
+      border-color: $error !important;
 
       &:focus {
-        outline-color: #CB3D40 !important;
+        outline-color: $error !important;
       }
     }
   }
@@ -97,7 +97,7 @@ const isPlaceholderTop = computed(() => {
   }
 
   &__error {
-    color: #CB3D40;
+    color: $error;
   }
 }
 </style>

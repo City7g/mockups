@@ -10,7 +10,7 @@ input[type="radio"] {
   transition: 0.3s background-color ease;
 
   &:checked {
-    border-color: #00bdd3;
+    border-color: $secondary;
   }
 
   &::after {
@@ -18,7 +18,7 @@ input[type="radio"] {
     height: 10px;
     width: 10px;
     opacity: 0;
-    background-color: #00bdd3;
+    background-color: $secondary;
     border-radius: 50%;
     transition: 0.3s opacity ease;
     content: "";

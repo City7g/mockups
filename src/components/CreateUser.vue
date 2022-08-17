@@ -22,11 +22,11 @@ const checkFormatImage = value => /[jpg,jpeg]$/.test(value)
 const checkPhoneNumber = value => /^\+38 \(0\d{2}\) \d{3}-\d{2}-\d{2}$/.test(value)
 
 const data = reactive({
-  name: 'Gus',
-  email: 'city@gmail.com',
-  phone: '+380959595959',
+  name: '',
+  email: '',
+  phone: '',
   photo: '',
-  position: 1
+  position: null
 })
 
 const rules = {
@@ -39,7 +39,7 @@ const rules = {
 
 const v$ = useVuelidate(rules, data)
 
-// Create User\
+// Create User
 const form = ref(null)
 const isFormSend = ref(false)
 const sendError = ref(null)
@@ -116,7 +116,7 @@ const sendForm = async () => {
   &__error {
     margin-top: 20px;
     text-align: center;
-    color: #CB3D40;
+    color: $error;
   }
 }
 

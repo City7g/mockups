@@ -4,9 +4,7 @@ module.exports = defineConfig({
   css: {
     loaderOptions: {
       sass: {
-        sassOptions: {
-          prependData: `@import "@/scss/variables.scss";`
-        }
+        additionalData: `@import "@/assets/scss/helpers/_variables.scss";`
       }
     }
   }

@@ -15,7 +15,7 @@
 
 <style scoped lang="scss">
 .section-first {
-  color: white;
+  color: $white;
   text-align: center;
 
   & .container {

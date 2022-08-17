@@ -15,7 +15,8 @@
 
 <style lang="scss">
 .header {
-	background-color: white;
+	background-color: $white;
+
 	&__wrap {
 		display: flex;
 		justify-content: space-between;

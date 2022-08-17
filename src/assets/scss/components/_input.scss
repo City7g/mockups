@@ -12,7 +12,7 @@ input[type="tel"] {
   border: 1px solid #d0cfcf;
 
   &:focus {
-    border-color: black;
-    outline: 1px solid black;
+    border-color: $black;
+    outline: 1px solid $black;
   }
 }

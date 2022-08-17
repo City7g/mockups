@@ -55,6 +55,7 @@ defineEmits(['update:modelValue'])
     font-size: 16px;
     line-height: 26px;
     opacity: 0;
+    cursor: pointer;
 
     &::file-selector-button,
     &::-webkit-file-upload-button {
@@ -62,7 +63,7 @@ defineEmits(['update:modelValue'])
     }
 
     &.error {
-      border-color: #CB3D40;
+      border-color: $error;
     }
   }
 
@@ -72,16 +73,16 @@ defineEmits(['update:modelValue'])
     left: 0;
     bottom: 0;
     padding: 13px 15px 13px 15px;
-    border: 1px solid rgba(0, 0, 0, 0.87);
+    border: 1px solid $black;
     border-radius: 4px 0px 0px 4px;
     font-size: 16px;
     line-height: 26px;
-    color: rgba(0, 0, 0, 0.87);
+    color: $black;
     cursor: pointer;
 
     .error~& {
-      border-color: #CB3D40 !important;
-      outline: 1px solid #CB3D40;
+      border-color: $error !important;
+      outline: 1px solid $error;
     }
   }
 
@@ -99,14 +100,15 @@ defineEmits(['update:modelValue'])
     border: 1px solid #D0CFCF;
     border-radius: 4px;
     color: #7E7E7E;
+    cursor: pointer;
 
     &.active {
-      color: rgba(0, 0, 0, 0.87);
+      color: $black;
     }
 
     .error~& {
-      border-color: #CB3D40;
-      outline: 1px solid #CB3D40;
+      border-color: $error;
+      outline: 1px solid $error;
     }
   }
 
