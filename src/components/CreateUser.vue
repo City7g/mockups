@@ -53,6 +53,7 @@ const sendForm = async () => {
     try {
       await userStore.createUser(formData)
       isFormSend.value = true
+      document.querySelector('#section-users').scrollIntoView()
     } catch (err) {
       sendError.value = err
       setTimeout(() => {
@@ -71,13 +72,13 @@ const sendForm = async () => {
 
         <form ref="form" @submit.prevent="sendForm" novalidate class="form-main">
           <BaseInput class="form-main__input" placeholder="Your name" v-model="data.name" name="name"
-            :error="v$.name.$error ? v$.name.$errors[0].$message : null" />
+            :error="v$.name.$silentErrors.length ? v$.name.$silentErrors[0].$message : null" />
 
           <BaseInput class="form-main__input" placeholder="Email" v-model="data.email" type="email" name="email"
-            :error="v$.email.$error ? v$.email.$errors[0].$message : null" />
+            :error="v$.email.$silentErrors.length ? v$.email.$silentErrors[0].$message : null" />
 
           <BasePhone class="form-main__input" placeholder="Phone" v-model="data.phone" type="tel" name="phone"
-            :error="v$.phone.$error ? v$.phone.$errors[0].$message : null" helperText="+38 (XXX) XXX - XX - XX" />
+            :error="v$.phone.$silentErrors.length ? v$.phone.$silentErrors[0].$message : null" helperText="+38 (XXX) XXX - XX - XX" />
 
           <BaseRadio class="form-main__radio" :options="listPositions" v-model="data.position" name="position_id"
             :error="v$.position.$error ? v$.position.$errors[0].$message : null" />

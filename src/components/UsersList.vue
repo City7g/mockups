@@ -52,7 +52,7 @@ const leave = () => {
 </script>
 
 <template>
-	<section class="section-users">
+	<section class="section-users" id="section-users">
 		<div class="container">
 			<h2 class="title-h1 section-users__title">Working with GET request</h2>
 
