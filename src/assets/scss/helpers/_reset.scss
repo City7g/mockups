@@ -1,0 +1,23 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito';
+}
+
+button {
+    border: none;
+}
+
+input {
+    font-family: inherit;
+}
+
+img {
+    max-width: 100%;
+}
